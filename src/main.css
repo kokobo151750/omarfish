@@ -1,0 +1,24 @@
+@font-face {
+  font-family: thai-sarabun;
+  src: url(../font/Sarabun-Medium.ttf);
+}
+
+@font-face {
+  font-family: thai-butifull;
+  src: url(../font/IBMPlexSansThai-Medium.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "thai-butifull", "thai-sarabun", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f0faff;
+}

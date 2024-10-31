@@ -1,0 +1,48 @@
+/* back to top */
+html {
+    scroll-behavior: smooth;
+  }
+  
+.button {
+    display: inline-block;
+    background-color: #5AB1BE;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+        opacity .1s, visibility .1s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    border: none;
+}
+
+.button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #055f9b;
+}
+
+.button:active {
+    background-color: #BEDAEA;
+}
+
+.button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* --------------- */

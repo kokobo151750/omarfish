@@ -1,0 +1,46 @@
+.modal-header {
+    background-color: rgba(255, 255, 255, 0.3); /* พื้นหลังโปร่งใส 30% */
+    backdrop-filter: blur(10px); /* ทำให้พื้นหลังเบลอ */
+    border-bottom: none; /* ลบเส้นขอบด้านล่างถ้าไม่ต้องการ */
+}
+
+.modal-header .modal-title {
+    color: #5AB1BE; /* เปลี่ยนสีตัวอักษรให้ชัดเจน */
+    font-weight: bold; /* ตัวอักษรหนา */
+}
+
+.responsive-video {
+    position: relative;
+    padding-bottom: 56.25%; /* อัตราส่วน 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.responsive-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-dialog-cusrom {
+    --bs-modal-width: 1000px !important;
+}
+
+@media only screen and (max-width: 1000px) {
+    .modal-dialog-cusrom {
+        margin: 0px 15px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .modal-header {
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .modal-header .modal-title {
+        font-size: 15px;
+    }
+}

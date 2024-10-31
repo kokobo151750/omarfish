@@ -1,0 +1,105 @@
+/* custom.css */
+.dataTables_filter input {
+    border: 1px solid #007bff;
+    /* เปลี่ยนสีของกรอบ */
+    border-radius: 4px;
+    /* เปลี่ยนรูปร่างของกรอบ */
+    padding: 8px 12px;
+    /* เพิ่ม padding */
+    font-size: 14px;
+    /* ขนาดฟอนต์ */
+    width: 250px;
+    /* กำหนดความกว้าง */
+    transition: border-color 0.3s;
+    /* เพิ่มเอฟเฟกต์การเปลี่ยนสี */
+}
+
+.form-control-sm input:focus {
+    border-color: #0056b3 !important;
+    /* สีของกรอบเมื่อมีการโฟกัส */
+    outline: none !important;
+    /* ลบ outline */
+}
+
+div.dt-container .dt-paging .dt-paging-button {
+    padding: 0em !important;
+    margin-left: 0px !important;
+}
+
+div.dt-container .dt-paging .dt-paging-button:active {
+    border: none !important;
+    background-color: none !important;
+    margin-left: 1px !important;
+    margin-right: 1px !important;
+}
+
+div.dt-container .dt-search input {
+    margin-left: 5px !important;
+}
+
+div.dt-container .dt-paging .dt-paging-button:hover {
+    border: none !important;
+    background: none !important;
+    margin-left: 1px !important;
+    margin-right: 1px !important;
+}
+
+.form-control-sm {
+    width: 220px !important;
+    padding-left: 15px !important;
+    border-radius: 20px !important;
+}
+
+table.dataTable th {
+    background-color: #f8f9fa !important;
+    /* บังคับให้เปลี่ยนสีพื้นหลัง */
+    text-align: center !important;
+    /* บังคับให้จัดตำแหน่งข้อความ */
+}
+
+.dt-ordering-asc {
+    width: 10px;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 2px !important;
+}
+
+thead,
+th {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 2px !important;
+    border-bottom: #DEE2E6 !important;
+}
+
+div.dt-container.dt-empty-footer tbody > tr:last-child > * {
+    border-bottom: 1px solid rgba(0, 0, 0, 0) !important;
+}
+
+@media only screen and (max-width: 460px) {
+    .form-control-sm {
+        width: 100% !important;
+        margin-top: 5px;
+    }
+
+    div.dt-container .dt-search input {
+        margin-left: 0px !important;
+    }
+
+}
+
+@media screen and (max-width: 510px) {
+    .dt-layout-full{
+        overflow-y: hidden !important;
+        overflow-x: scroll !important;
+    }
+
+}

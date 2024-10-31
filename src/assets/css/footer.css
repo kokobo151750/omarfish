@@ -1,0 +1,174 @@
+/* ---- Damin Website ---- */
+.DomainWebsite {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-top: 2px;
+    background-color: white;
+}
+
+/* ---- footer website ---- */
+.footer {
+    position: relative;
+    top: 16%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    background-image: linear-gradient(to top, #122747, #1c4870, #1f6d9a, #1b95c4, #12bfeb);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.footer .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    gap: 3.5rem;
+    padding: 60px;
+    max-width: 1950px;
+
+}
+
+.footer-row .footer-col h4 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.footer-col .links {
+    margin-top: 20px;
+}
+
+.footer-col .links li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer-col .links li a {
+    text-decoration: none;
+    color: #e4e4e4;
+}
+
+.footer-col .links li a:hover {
+    color: #fff;
+}
+
+.footer-col p {
+    margin: 20px 0;
+    color: #bfbfbf;
+    max-width: 300px;
+}
+
+.logo {
+    align-content: center;
+    font-size: 35px;
+    font-weight: 500;
+    color: #ffffff;
+    text-shadow: 1.5px 1.5px 1px rgb(3, 82, 156), 0 0 1em rgb(189, 188, 188), 0 0 0.2em rgb(255, 255, 255);
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.footer-col-logo {
+    display: block;
+    align-content: center;
+}
+
+.footer-col-thank {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    h4 {
+        line-height: 1.5;
+    }
+}
+
+.main-footer {
+    height: 300px;
+}
+
+@media (max-width: 930px) {
+    .footer {
+        top: 24%;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        top: 24%;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    .footer-col-contactAll {
+        text-align: center;
+    }
+}
+
+@media (max-width: 611px) {
+    .footer {
+        top: 32%;
+    }
+}
+
+@media (max-width: 494px) {
+    .footer {
+        top: 32%;
+    }
+
+    main .DomainWebsite {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 383px) {
+    .footer {
+        top: 32%;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 351px) {
+    .footer {
+        top: 33%;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 340px) {
+    .footer {
+        top: 35%;
+    }
+}
+@media (max-width: 322px) {
+    .footer {
+        top: 36%;
+    }
+}
+
+@media (max-width: 315px) {
+    .logo {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 383px) {
+    main .DomainWebsite {
+        margin-top: 20px;
+        height: 50px;
+    }
+}
+
+/* ----------------------- */

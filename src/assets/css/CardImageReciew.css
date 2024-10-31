@@ -1,0 +1,141 @@
+.card-container {
+    display: flex;
+    align-items: center;
+    height: 540px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    user-select: none;
+    cursor: grab;
+    margin-bottom: 50px;
+}
+
+.card-image-review {
+    min-width: 300px;
+    width: 300px;
+    margin: 0px 15px;
+    border: none;
+    box-shadow: 0px 0px 8px 3px rgba(221, 221, 221, 0.2);
+    cursor: grab;
+    z-index: 0;
+
+    .card-date {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 999;
+        width: 100px;
+        height: 40px;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 5px;
+
+        p {
+            font-size: 13px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 10px;
+            background-color: #61DBFD;
+            color: white;
+            width: 80px;
+            margin: 0 auto;
+            border-radius: 15px;
+            outline: 3px solid #dfe8ee;
+        }
+    }
+
+    .card-img-head {
+        min-height: 200px;
+        width: 300px;
+        overflow: hidden;
+        position: relative;
+        user-drag: none;
+        -webkit-user-drag: none;
+        user-select: none;
+        -webkit-user-select: none;
+        pointer-events: none;
+
+        img {
+            object-fit: cover;
+            object-position: center;
+            object-position: 50% 50%;
+            transition: all .3s ease-in-out;
+            opacity: 0.85;
+        }
+    }
+
+    .card-title {
+        transition: all 0.3s ease;
+    }
+}
+
+.card-image-review:active {
+    cursor: grabbing;
+}
+
+.card-image-review:hover {
+    .card-img-head img {
+        opacity: 1;
+    }
+
+    .card-title {
+        color: #5AB1BE;
+    }
+}
+
+.card-img-top {
+    width: 300px;
+    height: 300px;
+}
+
+.card-body-image-review {
+    min-height: 170px;
+    min-width: 300px;
+    width: 300px;
+    height: 350px;
+    overflow-y: auto;
+
+    .card-title {
+        font-weight: bold;
+    }
+}
+
+.card-footer {
+    min-width: 300px;
+    width: 300px;
+    background-color: white;
+    border: none;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom: 4px solid #87d2df;
+
+    .btn-primary {
+        width: 150px;
+        height: 45px;
+        align-content: center;
+        background-color: #5AB1BE;
+        border: none;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+    }
+
+    .btn-primary:hover {
+        background-color: #1188C8;
+
+    }
+
+    .btn-primary:active {
+        background-color: #076a9f;
+        border: 3px solid #BEDAEA;
+    }
+
+
+}
+
+.card-container:active {
+    cursor: grabbing;
+}
+
+.card-container::-webkit-scrollbar {
+    display: none;
+}
